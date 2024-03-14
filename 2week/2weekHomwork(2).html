@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>20195195 안정우 2주차 실습 1</title>
+    </head>
+    <body> <!-- 프레임 생성, 크키는 가로길이 최대*400, 프레임 이름은 img <a>의 target을 받을 장소, srcdoc으로 이미지가 출력되는 공간임을 표시-->
+        <iframe name="img" width="100%" height="500px" srcdoc="
+        <html><head></head><body><h1>이미지 출력</h1></body></html>"></iframe>
+        <table border="1"> <!--각 이미지 링크를 table에 넣기, 3개씩 하나의 행으로 만들어서 총 2행 3열로 만들기-->
+            <tr><td><a href="media/cat.jpg" target="img"> <!-- iframe에 나올 사진과 사진이 나올 iframe 타겟-->
+            <img src="media/cat.jpg" width="200" height="200" alt="고양이">  <!--표시할 이미지 링크와 사이즈(300*200), 그리고 사진 파일이 깨졌을 때 설명할 텍스트 작성-->
+             </a></td>
+    
+            <td><a href="media/kitty.jpg" target="img">
+            <img src="media/kitty.jpg" width="200" height="200" alt="아기고양이">
+            </a></td>
+    
+            <td><a href="media/treecat.jpg" target="img">
+            <img src="media/treecat.jpg" width="200" height="200" alt="나무 위에 고양이">
+            </a></td></tr>
+    
+            <tr><td><a href="media/hamburger.jpg" target="img">
+            <img src="media/hamburger.jpg" width="200" height="200" alt="햄버거">
+            </a></td>
+    
+            <td><a href="media/beef.jpg" target="img">
+            <img src="media/beef.jpg" width="200" height="200" alt="소고기">
+            </a></td>
+    
+            <td><a href="media/spaghetti.jpg" target="img">
+            <img src="media/spaghetti.jpg" width="200" height="200" alt="스파게티">
+            </a><td></tr>
+        </table>
+    </body>
+    
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>20195195 안정우 2주차 실습 2</title>
+    </head>
+    <body>
+        <!-- 프레임 생성, 크키는 1000*400, 프레임 이름은 video <a>의 target을 받을 장소, srcdoc으로 비디오가 출력하는 공간임을 표시-->
+        <iframe name="video" width="1000px" height="600px" srcdoc="
+        <html><head></head><body><h1>비디오 출력</h1></body></html>"></iframe>
+        <table border="1"> <!--각 비디오 링크를 table에 넣기, 1행으로 맞추기-->
+            <tr><td><a href="media/kitty.mp4" target="video"> <!--<a>와 target을 이용해 표시할 비디오 링크와 표시할 iframe의 이름을 지정-->
+                <video src="media/kitty.mp4"
+                width="320" height="240" 
+                 controls autoplay> <!--표현할 비디오 링크와 화면 크기 320*240, 제어버튼(오토 플레이)을 표시, 비디오가 안뜰 경우 표시하는 텍스트 작성-->
+            브라우저가 video 태그를 지원하지 않습니다.  </video>
+             </a></td>
+    
+            <td><a href="media/cat.mp4" target="video">
+                <video src="media/cat.mp4" 
+                width="320" height="240" 
+                 controls autoplay>
+            브라우저가 video 태그를 지원하지 않습니다.  </video>
+            </a></td>
+
+            <td><a href="media/countdown.mp4" target="video">
+                <video src="media/countdown.mp4" 
+                width="320" height="240" 
+                 controls autoplay>
+            브라우저가 video 태그를 지원하지 않습니다.  </video>
+        </a></td></tr>
+        </table>
+        <p><center><h1>영상을 클릭하시면 해당 홍보 영상이 보입니다.</h1></center></p>
+    </body>
+    
+</html>
