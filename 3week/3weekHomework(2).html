@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">    
+        <title>폼 입력 그룹으로 묶기</title>
+    </head>
+    <body>
+       <h1>로그인 폼</h1>
+       <hr>
+       <form>
+        <fieldset> <!-- 테두리 만들기-->
+        <legend>Login</legend><!--테두리 제목, label태그로 이름부분까지 묶기-->
+       <label for="username"> Username:</label>
+       <input id="username" size="20" value=""> 
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" size="20" value="">
+        </fieldset>
+        <small>질문 : Tel. 010-1234-5678</small>
+       </form>
+    </body>
+</html>
